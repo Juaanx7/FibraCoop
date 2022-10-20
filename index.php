@@ -12,7 +12,7 @@
 
 <body class="text-center bg-image">      
         <main class="form-signin w-100 m-auto">        
-            <form>
+            <form action="validar.php" method="post">
                 <img class="mb-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
                 <h1 class="h3 mb-3 fw-normal fs-2">Por favor inicia sesion</h1>        
                 <div class="form-floating">
@@ -28,7 +28,8 @@
                         <input class="fs-4" type="checkbox" value="remember-me"> Recordarme
                     </label>
                 </div>
-                <a href="pages/home.html" class="btn btn-primary stretched-link fs-3">Ingresar</a>
+                <!-- <a href="pages/home.html" class="btn btn-primary stretched-link fs-3">Ingresar</a> -->
+                <input type="submit" value="Ingresar">
                 <p class="mt-5 mb-3 text-muted fs-4">&copy; FibraCoop</p>
             </form>              
         </main>
