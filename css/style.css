@@ -45,5 +45,12 @@ body {
   color: black;
 
 }
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
 
 /* ------ Style para Home ------- */
