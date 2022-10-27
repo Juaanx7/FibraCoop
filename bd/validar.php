@@ -14,10 +14,8 @@ $resultado=mysqli_query($conexion, $consulta);
 $filas=mysqli_num_rows($resultado);
 
 if($filas){
-    header("location:home.html");
+    header("location:../pages/home.html");
 }else{
-    ?>
-    <?php
     include("index.php");
     ?>
     <h1 class="bad">Usuario o contraseña incorrecto</h1>
@@ -26,3 +24,4 @@ if($filas){
 
 mysqli_free_result($resultado);
 mysqli_close($conexion);
+?>

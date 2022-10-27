@@ -14,18 +14,18 @@
 
 <body class="text-center bg-image">      
         <main class="form-signin w-100 m-auto">        
-            <form action="validar.php" method="post">
+            <form id="formlogin" action="bd/validar.php" method="post">
                 <img class="mb-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
                 <h1 class="h3 mb-3 fw-normal fs-2">Por favor inicia sesion</h1>        
                 <div class="form-floating">
-                    <input type="text" class="form-control fs-3" id="floatingInput" name="usuario">
+                    <input type="text" class="form-control fs-3" id="usuario" name="usuario">
                     <!-- 
                         <label class="fs-4" for="floatingInput">Ingrese su usuario</label>
                      -->
                     
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control fs-3" id="floatingPassword" name="password">
+                    <input type="password" class="form-control fs-3" id="password" name="password">
                     <!-- 
                         <label  class="fs-4" for="floatingPassword">Ingrese su contraseña</label>
                      -->
@@ -45,9 +45,12 @@
         <a class="fixed-bottom link-dark fs-3 mb-3" href="200.45.79.36" target=”_blank” rel=”nofollow”>Ingrese a ISP</a>
     </footer>
 
+    <script>src="js/codigo.js"</script>
+    <script>src="jquery/jquery-3.6.1.min.js"</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
