@@ -14,7 +14,7 @@
 
 <body class="text-center bg-image">      
         <main class="form-signin w-100 m-auto">        
-            <form id="formlogin" action="bd/validar.php" method="post">
+            <form id="formlogin" action="" method="post">
                 <img class="mb-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
                 <h1 class="h3 mb-3 fw-normal fs-2">Por favor inicia sesion</h1>        
                 <div class="form-floating">
@@ -33,11 +33,12 @@
                 </div>        
                 <div class="checkbox m-4">
                     <label>
-                        <input class="fs-4" type="checkbox" value="remember-me"> Recordarme
+                        <input class="fs-2" type="checkbox" value="remember-me"> Recordarme
                     </label>
                 </div>
                 <!-- <a href="pages/home.html" class="btn btn-primary stretched-link fs-3">Ingresar</a> -->
-                <input type="submit" value="Ingresar">
+                
+                <input type="submit" name="submit" class="btn btn-primary stretched-link fs-3" value="Conectar">
                 <p class="mt-5 mb-3 text-muted fs-4">&copy; FibraCoop</p>
             </form>              
         </main>
@@ -45,12 +46,13 @@
         <a class="fixed-bottom link-dark fs-3 mb-3" href="200.45.79.36" target=”_blank” rel=”nofollow”>Ingrese a ISP</a>
     </footer>
 
-    <script>src="js/codigo.js"</script>
-    <script>src="jquery/jquery-3.6.1.min.js"</script>
+    
+    <script src="jquery/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="codigo.js"></script>
 </body>
 
 </html>
