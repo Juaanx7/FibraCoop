@@ -21,20 +21,20 @@
                         <div id="login-box" class="col-md-12 bg-light text-dark">
                             <form id="formLogin" class="form" action="" method="post">
                                 <div class="text-center">
-                                <img class="mb-4 mt-4 display-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
+                                    <img class="mb-4 mt-4 display-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
                                 </div>                                
                                 <h3 class="text-center text-dark">Inicia Sesión</h3>
-                                <div class="form-group">
+                                <div class="form-group w-50 mx-5">
                                     <label for="usuario" class="text-dark">Usuario</label>
                                     <input type="text" name="usuario" id="usuario" class="form-control">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group w-50 mx-5 mt-2">
                                     <label for="password" class="text-dark">Password</label>
                                     <input type="password" name="password" id="password" class="form-control">
                                 </div>
                                 
-                                <div class="form-gropu text-center">
-                                    <input type="submit" name="submit" class="btn btn-dark btn-lg btn-block" value="Conectar">
+                                <div class="form-gropu text-center mt-4">
+                                    <input type="submit" name="submit" class="btn btn-dark btn-lg btn-block" value="Ingresar">
                                     <p class="mt-4 mb-3 text-muted fs-4">&copy; FibraCoop</p>
                                 </div>
                             </form>
