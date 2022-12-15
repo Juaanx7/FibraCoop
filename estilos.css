@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg-image {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+
+#login .container #login-row #login-column #login-box{
+    margin-top: 70px;
+    max-width: 600px;
+    height: 300px;
+    box-shadow: 2px 2px 2px 2px #343a40;
+    border-radius: 3px;
+}

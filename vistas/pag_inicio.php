@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if($_SESSION["s_usuario"] === null){
+    header("Location: ../index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +16,11 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../estilos.css">
 </head>
 
-<body class=" bg-image container text-center">
-    <main class="p-10 col">
+<body class="bg-image container text-center">
+    <main class="p-10 col container text-center">
         <div class="p-2">
             <img class="mb-4" src="../img/logo fibra2.jpg" alt="" width="" height="57">
         </div>
@@ -21,9 +29,9 @@
             <nav class="navbar bg-light">
                 <div class="container-fluid">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 fs-4" type="search" placeholder="Busque el cliente"
+                        <input class="form-control me-2 fs-5" type="search" placeholder="Busque el cliente"
                             aria-label="Search">
-                        <button class="btn btn-outline-success fs-4" type="submit">Buscar</button>
+                        <button class="btn btn-outline-success fs-5" type="submit">Buscar</button>
                     </form>
                 </div>
             </nav>
@@ -31,13 +39,13 @@
         </div>
         <div class="row">
             <table class="table table-bordered table-responsive table-light w-75">
-                <thead class="table-dark text-center fs-4">
+                <thead class="table-dark text-center fs-5">
                     <tr>
                         <th scope="col">Nombre cliente</th>
                         <th scope="col">Datos Cliente</th>
                     </tr>
                 </thead>
-                <tbody class="text-start fs-4">
+                <tbody class="text-start fs-5">
                     <tr>
                         <th scope="row">MAC</th>
                         <td>00:02:71:96:78:86</td>
@@ -63,7 +71,7 @@
         </div>
     </main>
     <footer>
-        <a class="fixed-bottom link-dark fs-3 mb-3" href="200.45.79.36" target=”_blank” rel=”nofollow”>Ingrese a ISP</a>
+        <a class="fixed-bottom link-dark fs-5 mb-3" href="200.45.79.36" target=”_blank” rel=”nofollow”>Ingrese a ISP</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -1,58 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="#" />
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>FibracCoop</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FibraCoop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body class="text-center bg-image">      
-        <main class="form-signin w-100 m-auto">        
-            <form id="formlogin" action="" method="post">
-                <img class="mb-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
-                <h1 class="h3 mb-3 fw-normal fs-2">Por favor inicia sesion</h1>        
-                <div class="form-floating">
-                    <input type="text" class="form-control fs-3" id="usuario" name="usuario">
-                    <!-- 
-                        <label class="fs-4" for="floatingInput">Ingrese su usuario</label>
-                     -->
-                    
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control fs-3" id="password" name="password">
-                    <!-- 
-                        <label  class="fs-4" for="floatingPassword">Ingrese su contraseña</label>
-                     -->
-                    
-                </div>        
-                <div class="checkbox m-4">
-                    <label>
-                        <input class="fs-2" type="checkbox" value="remember-me"> Recordarme
-                    </label>
-                </div>
-                <!-- <a href="pages/home.html" class="btn btn-primary stretched-link fs-3">Ingresar</a> -->
-                
-                <input type="submit" name="submit" class="btn btn-primary stretched-link fs-3" value="Conectar">
-                <p class="mt-5 mb-3 text-muted fs-4">&copy; FibraCoop</p>
-            </form>              
-        </main>
-    <footer>
-        <a class="fixed-bottom link-dark fs-3 mb-3" href="200.45.79.36" target=”_blank” rel=”nofollow”>Ingrese a ISP</a>
-    </footer>
-
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">            
+    </head>
     
-    <script src="jquery/jquery-3.6.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="codigo.js"></script>
-</body>
+    <body class="bg-image">
+        <div id="login">            
+            <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                    <div id="login-column" class="col-md-6">
+                        
+                        <div id="login-box" class="col-md-12 bg-light text-dark">
+                            <form id="formLogin" class="form" action="" method="post">
+                                <div class="text-center">
+                                <img class="mb-4 mt-4 display-4" src="img/logo fibra2.jpg" alt="" width="" height="57">
+                                </div>                                
+                                <h3 class="text-center text-dark">Inicia Sesión</h3>
+                                <div class="form-group">
+                                    <label for="usuario" class="text-dark">Usuario</label>
+                                    <input type="text" name="usuario" id="usuario" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text-dark">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                                
+                                <div class="form-gropu text-center">
+                                    <input type="submit" name="submit" class="btn btn-dark btn-lg btn-block" value="Conectar">
+                                    <p class="mt-4 mb-3 text-muted fs-4">&copy; FibraCoop</p>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>         
+        </div>
 
+     <script src="jquery/jquery-3.3.1.min.js"></script>    
+     <script src="bootstrap/js/bootstrap.min.js"></script>    
+     <script src="popper/popper.min.js"></script>        
+     <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>    
+     <script src="codigo.js"></script>    
+    </body>
 </html>

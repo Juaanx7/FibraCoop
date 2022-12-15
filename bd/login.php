@@ -1,30 +1,4 @@
 <?php
-/* include('conexion.php');
-
-$USUARIO=(isset($_POST['usuario'])) ? $_POST['usuario'] : '';
-$PASSWORD=(isset($_POST['password'])) ? $_POST['password'] : '';
-
-$pass = md5($PASSWORD); //encripto la clave enviada por el usuario para compararla con la clave encriptaday almacenada en la bd.
-
-$consulta="SELECT*FROM personal where usuario='$USUARIO' and password='$pass'";
-$resultado=mysqli_query($conexion, $consulta);
-$filas=mysqli_num_rows($resultado);
-
-if($filas){
-    header("location:../pages/home.html");
-}else{
-    include("index.php");
-    ?>
-    <h1 class="bad">Usuario o contraseña incorrecto</h1>
-    <?php
-}
-
-mysqli_free_result($resultado);
-mysqli_close($conexion);
-*/
-
-// PRUEBA 2
-
 session_start();
 
 include_once 'conexion.php';
@@ -52,4 +26,6 @@ if($resultado->rowCount() >= 1){
 print json_encode($data);
 $conexion=null;
 
-?>
+//usuarios de pruebaen la base de datos
+//usuario:admin pass:12345
+//usuario:demo pass:demo

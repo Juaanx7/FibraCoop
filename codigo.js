@@ -1,29 +1,40 @@
-$("#formlogin").submit(function(e){
-    e.preventDeFault();
-    var usuario = $.trim($("#usuario").val());
-    var password = $.trim($("#password").val());
-
-    if (usuario.length == "" || password.length == "") {
-        swal("Ups!", "Debes escribir un usuario y una contraseña!", "error");
-        return false;
-    } else {
+$('#formLogin').submit(function(e){
+   e.preventDefault();
+   var usuario = $.trim($("#usuario").val());    
+   var password =$.trim($("#password").val());    
+    
+   if(usuario.length == "" || password == ""){
+      Swal.fire({
+          type:'warning',
+          title:'Debe ingresar un usuario y/o password',
+      });
+      return false; 
+    }else{
         $.ajax({
-            url: "bd/validar.php",
-            type: "POST",
-            datatype: "json",
-            data: { usuario: usuario, password: password },
-            succes: function (data) {
-                if (data == "null") {
-                    swal("Ups!", "Usuario y/o contraseña incorrecta!", "error");
-                } else {
-                    swal("Conexion exitosa!", "succes")
-                    .then((result) => {
-                        if (result.value) {
-                            window.location.href = "../pages/home.html";
-                        }
-                    })
-                }
-            }
-        })
-    }
+           url:"bd/login.php",
+           type:"POST",
+           datatype: "json",
+           data: {usuario:usuario, password:password}, 
+           success:function(data){               
+               if(data == "null"){
+                   Swal.fire({
+                       type:'error',
+                       title:'Usuario y/o password incorrecta',
+                   });
+               }else{
+                   Swal.fire({
+                       type:'success',
+                       title:'¡Conexión exitosa!',
+                       confirmButtonColor:'#3085d6',
+                       confirmButtonText:'Ingresar'
+                   }).then((result) => {
+                       if(result.value){
+                           window.location.href = "vistas/pag_inicio.php";
+                       }
+                   })
+                   
+               }
+           }    
+        });
+    }     
 });
