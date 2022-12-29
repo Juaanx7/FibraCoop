@@ -28,8 +28,8 @@ $('#formLogin').submit(function(e){
                        confirmButtonColor:'#3085d6',
                        confirmButtonText:'Ingresar'
                    }).then((result) => {
-                       if(result.value){
-                           window.location.href = "vistas/crudClientes.php";
+                       if(result.value){                            
+                           window.location.href = "vistas/crudClientes.php";                            
                        }
                    })
                    
@@ -38,3 +38,5 @@ $('#formLogin').submit(function(e){
         });
     }     
 });
+//Finaliza login
+

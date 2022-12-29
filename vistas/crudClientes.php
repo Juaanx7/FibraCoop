@@ -19,11 +19,11 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FibraCoop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
     <link rel="stylesheet" href="../estilos.css">
-    <link rel="stylesheet" type="text/css" href="../DataTables/datatables.css">
-    <link rel="stylesheet" type="text/css" href="../DataTables/DataTables-1.13.1/css/dataTables.bootstrap5.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"> -->
+    <!--     <link rel="stylesheet" type="text/css" href="../DataTables/DataTables-1.13.1/css/dataTables.bootstrap5.min.css"> -->
 </head>
 <body class="bg-image">
     <header>
@@ -49,7 +49,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                         <thead class="text-center">
                             <tr>
                                 <th>Id</th>
-                                <th>Nombre</th>
+                                <th>Nombres</th>
                                 <th>MAC</th>
                                 <th>Posicion</th>
                                 <th>Abono</th>
@@ -146,5 +146,12 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
     <!-- Finaliza modal -->
+
+    <script src="jquery/jquery-3.6.3.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="popper/popper.min.js"></script>        
+    <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="codigo.js"></script>
 </body>
 </html>
