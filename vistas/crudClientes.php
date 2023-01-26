@@ -35,7 +35,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <button id="btnNuevo" type="button" class="btn btn-success">Nuevo cliente</button>
+                <button id="btnNuevo" type="button" class="btn btn-success" data-toggle="modal">Nuevo cliente</button>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                         <td> <?php echo $dat ['Posicion'] ?> </td>
                                         <td> <?php echo $dat ['Abono'] ?> </td>
                                         <td> <?php echo $dat ['SSID'] ?> </td> 
-                                        <td> <?php echo $dat ['Password'] ?> </td>
+                                        <td> <?php echo $dat ['Pass'] ?> </td>
                                     </tr> 
                                 <?php                                      
                                 }
@@ -112,7 +112,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="formClientes">
+                <form id="formClientes" class="m-4">
                     <div class="form-group">
                         <label for="nombre" class="col-form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre">
@@ -147,10 +147,10 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <!-- Finaliza modal -->
 
-    <script src="jquery/jquery-3.6.3.min.js"></script>    
+    <script src="../jquery/jquery-3.6.3.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
-    <script src="popper/popper.min.js"></script>        
-    <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="../popper/popper.min.js"></script>        
+    <script src="../plugins/sweetalert2/sweetalert2.all.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
     <script type="text/javascript" src="codigo.js"></script>
 </body>
