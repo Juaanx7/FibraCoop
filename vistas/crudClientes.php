@@ -75,24 +75,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                                     </tr> 
                                 <?php                                      
                                 }
-                                ?>
-                            <!-- 
-                              <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                               <div class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-primary btnEditar">Editar</button>
-                                        <button class="btn btn-primary btnBorrar">Borrar</button>
-                                    </div>
-                               </div> 
-                            </td>  
-                             -->                           
+                                ?>                                                       
 
                         </tbody>
                     </table>
