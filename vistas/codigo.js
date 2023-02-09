@@ -12,7 +12,12 @@ $(document).ready(function () {
 
     });
 
+//Boton para nuevo cliente:
 $("#btnNuevo").click(function(){
+    $("#formClientes").trigger("reset");
+    $(".modal-header").css("background-color", "#198754");
+    $(".modal-header").css("color", "white");
+    $(".modal-title").text("Nuevo cliente");
     $("#modalCRUD").modal("show");
 });  
 
